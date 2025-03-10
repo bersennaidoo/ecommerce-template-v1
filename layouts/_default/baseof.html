@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <main class="row main-sections">
+    <div class="col-sm-12">
+    {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+</body>
+</html>
