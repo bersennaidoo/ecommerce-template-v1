@@ -25,27 +25,27 @@ function MainNavigation() {
                   </button>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to="/shop/login-admin">
+                      <Link className="dropdown-item" to="/login-admin">
                         Login
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/shop/logout-admin">
+                      <Link className="dropdown-item" to="/logout-admin">
                         Logout
                       </Link>
                     </li>
                      <li>
-                      <Link className="dropdown-item" to="/shop/login-products">
+                      <Link className="dropdown-item" to="/login-products">
                         Login Products
                       </Link>
                     </li>
                      <li>
-                      <Link className="dropdown-item" to="/shop/login-products">
+                      <Link className="dropdown-item" to="/login-products">
                         Login Products
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" to="/shop/profile">
+                      <Link className="dropdown-item" to="/profile">
                         Profile
                       </Link>
                     </li>

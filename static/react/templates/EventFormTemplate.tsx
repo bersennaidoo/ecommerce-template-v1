@@ -6,7 +6,7 @@ import { useNavigate, Form, json, redirect } from 'react-router-dom';
 function EventFormTemplate({ method, event}: any) {
   const navigate = useNavigate();
   function cancelHandler() {
-    navigate(`/shop/events`);
+    navigate(`/events`);
   }
 
   return (

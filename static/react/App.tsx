@@ -81,7 +81,7 @@ const routeradmin = createBrowserRouter([
 
 const routerproducts = createBrowserRouter([
   {
-    path: "/shop",
+    path: "/",
     element: <RootLayout />,
     errorElement: <ErrorScript />,
     children: [

@@ -24465,11 +24465,11 @@
               return jsxWithValidation(type, props, key, false);
             }
           }
-          var jsx25 = jsxWithValidationDynamic;
-          var jsxs14 = jsxWithValidationStatic;
+          var jsx27 = jsxWithValidationDynamic;
+          var jsxs17 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
-          exports.jsx = jsx25;
-          exports.jsxs = jsxs14;
+          exports.jsx = jsx27;
+          exports.jsxs = jsxs17;
         })();
       }
     }
@@ -31251,30 +31251,152 @@
     return matchPath(path.pathname, nextPath) != null || matchPath(path.pathname, currentPath) != null;
   }
 
-  // static/react/RootLayout.tsx
+  // static/react/components/RootHeader.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime());
+  var RootHeader = ({}) => {
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", { className: "p-3 border-bottom bg-light", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container-fluid", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "row g-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "col-md-3 text-center", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { alt: "logo", src: "../../images/logo.webp" }) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "col-md-5" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "col-md-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "position-relative d-inline me-3", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { to: "/cart", className: "btn btn-primary", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-cart3" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "position-absolute top-0 start-100 translate-middle badge bg-danger rounded-circle", children: "2" })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "btn-group", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            "button",
+            {
+              type: "button",
+              className: "btn btn-secondary rounded-circle border me-3",
+              "data-toggle": "dropdown",
+              "aria-expanded": "false",
+              "aria-label": "Profile",
+              "data-bs-toggle": "dropdown",
+              children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-person-fill text-light" })
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", { className: "dropdown-menu", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/account/profile", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-person-square" }),
+              " My Profile"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/star/zone", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-star-fill text-warning" }),
+              " Star Zone"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/account/orders", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-list-check text-primary" }),
+              " Orders"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/account/wishlist", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-heart-fill text-danger" }),
+              " Wishlist"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("hr", { className: "dropdown-divider" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/account/notification", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-bell-fill text-primary" }),
+              "Notification"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/support", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-info-circle-fill text-success" }),
+              "Support"
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("hr", { className: "dropdown-divider" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("i", { className: "bi bi-door-closed-fill text-danger" }),
+              "Logout"
+            ] }) })
+          ] })
+        ] })
+      ] })
+    ] }) }) });
+  };
+  var RootHeader_default = RootHeader;
+
+  // static/react/components/TopMenu.tsx
+  var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+  var TopMenu = () => {
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("nav", { className: "navbar navbar-expand-lg navbar-dark bg-dark p-0", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "container-fluid", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "navbar-brand", to: "/", children: "E-Commerce" }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+        "button",
+        {
+          className: "navbar-toggler",
+          type: "button",
+          "data-bs-toggle": "collapse",
+          "data-bs-target": "#navbarSupportedContent",
+          "aria-controls": "navbarSupportedContent",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation",
+          children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "navbar-toggler-icon" })
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "collapse navbar-collapse", id: "navbarSupportedContent", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "navbar-nav", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("li", { className: "nav-item dropdown", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+            "button",
+            {
+              className: "btn nav-link dropdown-toggle fw-bold",
+              id: "navbarDropdown",
+              "data-toggle": "dropdown",
+              "aria-expanded": "false",
+              "data-bs-toggle": "dropdown",
+              children: "All Pages"
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "dropdown-menu", "aria-labelledby": "navbarDropdown", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/account/signin", children: "Sign In" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/account/signup", children: "Sign Up" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("hr", { className: "dropdown-divider" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/checkout", children: "Checkout Page" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/contact-us", children: "Contact Us" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/blog", children: "Blog" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/blog/detail", children: "Blog Detail" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("hr", { className: "dropdown-divider" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/fsafasf", children: "404 Page Not Found" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "dropdown-item", to: "/500", children: "500 Internal Server Error" }) })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Fashion" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Supermarket" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Electronics" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Furniture" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Garden & Outdoors" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/category", children: "Jewellery" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { className: "nav-item", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { className: "nav-link", to: "/documentation", children: "Documentation" }) })
+      ] }) })
+    ] }) });
+  };
+  var TopMenu_default = TopMenu;
+
+  // static/react/RootLayout.tsx
+  var import_jsx_runtime3 = __toESM(require_jsx_runtime());
   var RootLayout = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) });
+    return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(RootHeader_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(TopMenu_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Outlet, {})
+    ] });
   };
   var RootLayout_default = RootLayout;
 
   // static/react/scripts/HomeScript.tsx
-  var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   var HomeScript = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "container mb-5", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { to: "/shop/events", children: "Admin" }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("img", { src: "/images/gallery-img-02.jpg", className: "img-fluid" }) })
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "container mb-5", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Link, { to: "/shop/events", children: "Admin" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("img", { src: "/images/gallery-img-02.jpg", className: "img-fluid" }) })
     ] }) });
   };
   var HomeScript_default = HomeScript;
 
   // static/react/scripts/Auth0Login.tsx
-  var import_jsx_runtime3 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime5 = __toESM(require_jsx_runtime());
   var LoginButton = () => {
     const { loginWithRedirect } = useAuth0();
-    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", { onClick: () => loginWithRedirect(), children: "Log In" });
+    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { onClick: () => loginWithRedirect(), children: "Log In" });
   };
   var Auth0Login_default = LoginButton;
 
@@ -31286,7 +31408,7 @@
   var import_react_dom = __toESM(require_react_dom());
 
   // static/react/components/Cart.tsx
-  var import_jsx_runtime4 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime6 = __toESM(require_jsx_runtime());
   function Cart() {
     const {
       isEmpty,
@@ -31296,18 +31418,18 @@
       removeItem,
       addItem
     } = useCart();
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("h1", { children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("h1", { children: [
         "Cart (",
         totalUniqueItems,
         ")"
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("ul", { children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("li", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("ul", { children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("li", { children: [
         item.quantity,
         " x ",
         item.title,
         " \u2014",
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
           "button",
           {
             className: "btn btn-danger",
@@ -31315,7 +31437,7 @@
             children: "-"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
           "button",
           {
             className: "btn btn-success",
@@ -31323,13 +31445,13 @@
             children: "+"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { className: "btn btn-danger", onClick: () => removeItem(item.id), children: "\xD7" })
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { className: "btn btn-danger", onClick: () => removeItem(item.id), children: "\xD7" })
       ] }, item.id)) })
     ] });
   }
 
   // static/react/components/CartModal.tsx
-  var import_jsx_runtime5 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime7 = __toESM(require_jsx_runtime());
   var CartModal = (0, import_react3.forwardRef)(function Modal({ title, actions }, ref) {
     const dialog = (0, import_react3.useRef)();
     (0, import_react3.useImperativeHandle)(ref, () => {
@@ -31340,10 +31462,10 @@
       };
     });
     return (0, import_react_dom.createPortal)(
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("dialog", { id: "modal", ref: dialog, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h2", { children: title }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Cart, {}),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("form", { method: "dialog", id: "modal-actions", children: actions })
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("dialog", { id: "modal", ref: dialog, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { children: title }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Cart, {}),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("form", { method: "dialog", id: "modal-actions", children: actions })
       ] }),
       document.body
     );
@@ -31351,23 +31473,23 @@
   var CartModal_default = CartModal;
 
   // static/react/components/Header.tsx
-  var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
   function Header() {
     const modal = (0, import_react4.useRef)();
     const { items, totalUniqueItems } = useCart();
     function handleOpenCartClick() {
       modal.current.open();
     }
-    let modalActions = /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { children: "Close" });
+    let modalActions = /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { children: "Close" });
     if (totalUniqueItems > 0) {
-      modalActions = /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_jsx_runtime6.Fragment, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { children: "Close" }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { children: "Checkout" })
+      modalActions = /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { children: "Close" }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { children: "Checkout" })
       ] });
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_jsx_runtime6.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(CartModal_default, { ref: modal, title: "Your Cart", actions: modalActions }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("header", { id: "main-header", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", { children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("button", { onClick: handleOpenCartClick, className: "btn btn-warning", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(CartModal_default, { ref: modal, title: "Your Cart", actions: modalActions }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("header", { id: "main-header", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("button", { onClick: handleOpenCartClick, className: "btn btn-warning", children: [
         "Cart (",
         totalUniqueItems,
         ")"
@@ -31376,30 +31498,30 @@
   }
 
   // static/react/components/MainNavigation.tsx
-  var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
   function MainNavigation() {
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "all-title-box", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "col-sm-12", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { children: "Shop" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("ul", { className: "breadcrumb", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Header, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "btn-group", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "all-title-box", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-sm-12", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { children: "Shop" }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("ul", { className: "breadcrumb", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Header, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { className: "breadcrumb-item", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "btn-group", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "button",
             {
               type: "button",
               className: "btn btn-info dropdown-toggle",
               "data-bs-toggle": "dropdown",
               "aria-expanded": "false",
-              children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("i", { className: "fa fa-user" })
+              children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("i", { className: "fa fa-user" })
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("ul", { className: "dropdown-menu", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/login-admin", children: "Login" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/logout-admin", children: "Logout" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/login-products", children: "Login Products" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/login-products", children: "Login Products" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/profile", children: "Profile" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { className: "dropdown-item", to: "/shop/products", children: "Products" }) })
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("ul", { className: "dropdown-menu", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/login-admin", children: "Login" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/logout-admin", children: "Logout" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/login-products", children: "Login Products" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/login-products", children: "Login Products" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/profile", children: "Profile" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { className: "dropdown-item", to: "/shop/products", children: "Products" }) })
           ] })
         ] }) })
       ] })
@@ -31408,33 +31530,33 @@
   var MainNavigation_default = MainNavigation;
 
   // static/react/scripts/EventsLayout.tsx
-  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
   var EventsLayout = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(MainNavigation_default, {}) }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Outlet, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(MainNavigation_default, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Outlet, {}) })
     ] });
   };
   var EventsLayout_default = EventsLayout;
 
   // static/react/scripts/EventsScript.tsx
-  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
   var EventsScript = (props) => {
     const events = useLoaderData();
     const { addItem } = useCart();
-    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_jsx_runtime9.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "col-sm-12", children: events.map((evt) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "d-md-flex flex-md-wrap gap-3 mb-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("img", { src: evt.image, className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex flex-column", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h1", { children: evt.title }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { children: evt.date }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { children: evt.description }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("p", { children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(import_jsx_runtime11.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "col-sm-12", children: events.map((evt) => /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "d-md-flex flex-md-wrap gap-3 mb-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("img", { src: evt.image, className: "img-fluid" }),
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex flex-column", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("h1", { children: evt.title }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("h2", { children: evt.date }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("p", { children: evt.description }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("p", { children: [
           "R",
           evt.price
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { to: `/shop/events/${evt.id}`, children: "Event" }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Link, { to: `/shop/events/${evt.id}`, children: "Event" }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
           "button",
           {
             onClick: () => addItem(evt),
@@ -31462,7 +31584,7 @@
   }
 
   // static/react/templates/EventItemTemplate.tsx
-  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime12 = __toESM(require_jsx_runtime());
   function EventItemTemplate({ event }) {
     const submit = useSubmit();
     const { addItem } = useCart();
@@ -31472,16 +31594,16 @@
         submit(null, { method: "delete" });
       }
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("article", { className: "d-md-flex gap-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("img", { src: event.imageUrl, alt: event.name, className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "d-flex flex-column", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h1", { children: event.name }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: event.description }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: event.price }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "d-flex", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { className: "btn btn-primary me-2", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Link, { to: "edit", children: "Edit" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { onClick: startDeleteHandler, className: "btn btn-danger", children: "Delete" }),
-          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", { onClick: () => addItem(event), className: "btn btn-success", children: "Add to Cart" })
+    return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("article", { className: "d-md-flex gap-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("img", { src: event.imageUrl, alt: event.name, className: "img-fluid" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "d-flex flex-column", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h1", { children: event.name }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { children: event.description }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("p", { children: event.price }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "d-flex", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { className: "btn btn-primary me-2", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Link, { to: "edit", children: "Edit" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: startDeleteHandler, className: "btn btn-danger", children: "Delete" }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { onClick: () => addItem(event), className: "btn btn-success", children: "Add to Cart" })
         ] })
       ] })
     ] });
@@ -31489,18 +31611,18 @@
   var EventItemTemplate_default = EventItemTemplate;
 
   // static/react/scripts/Loading.tsx
-  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
-  var Loading = () => /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "spinner", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("p", { children: "Loading" }) });
+  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+  var Loading = () => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "spinner", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("p", { children: "Loading" }) });
   var Loading_default = Loading;
 
   // static/react/scripts/EventDetailScript.tsx
-  var import_jsx_runtime12 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
   function EventDetailScript() {
     const event = useRouteLoaderData("event-detail");
-    return /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(EventItemTemplate_default, { event }) }) }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(EventItemTemplate_default, { event }) }) }) });
   }
   var EventDetailScript_default = withAuthenticationRequired(EventDetailScript, {
-    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(Loading_default, {})
+    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Loading_default, {})
   });
   async function loader2({ request, params }) {
     const id = params.id;
@@ -31533,16 +31655,16 @@
   }
 
   // static/react/templates/EventFormTemplate.tsx
-  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime15 = __toESM(require_jsx_runtime());
   function EventFormTemplate({ method, event }) {
     const navigate = useNavigate();
     function cancelHandler() {
-      navigate(`/shop/events`);
+      navigate(`/events`);
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(Form, { method, className: "", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("p", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("label", { htmlFor: "title", children: "Title" }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Form, { method, className: "", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("p", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("label", { htmlFor: "title", children: "Title" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
           "input",
           {
             id: "title",
@@ -31553,9 +31675,9 @@
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("p", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("label", { htmlFor: "image", children: "Image" }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("p", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("label", { htmlFor: "image", children: "Image" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
           "input",
           {
             id: "image",
@@ -31566,9 +31688,9 @@
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("p", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("label", { htmlFor: "date", children: "Date" }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("p", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("label", { htmlFor: "date", children: "Date" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
           "input",
           {
             id: "date",
@@ -31579,9 +31701,9 @@
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("p", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("label", { htmlFor: "description", children: "Description" }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("p", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("label", { htmlFor: "description", children: "Description" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
           "textarea",
           {
             id: "description",
@@ -31592,9 +31714,9 @@
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("button", { type: "button", onClick: cancelHandler, children: "Cancel" }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("button", { children: "Save" })
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { className: "", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("button", { type: "button", onClick: cancelHandler, children: "Cancel" }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("button", { children: "Save" })
       ] })
     ] });
   }
@@ -31630,27 +31752,27 @@
   }
 
   // static/react/scripts/NewEventScript.tsx
-  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime16 = __toESM(require_jsx_runtime());
   function NewEventScript() {
     const event = useRouteLoaderData("event-detail");
-    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(EventFormTemplate_default, { method: "post", event });
+    return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(EventFormTemplate_default, { method: "post", event });
   }
   var NewEventScript_default = withAuthenticationRequired(NewEventScript, {
-    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Loading_default, {})
+    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(Loading_default, {})
   });
 
   // static/react/scripts/EditEventScript.tsx
-  var import_jsx_runtime15 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime17 = __toESM(require_jsx_runtime());
   function EditEventScript() {
     const event = useRouteLoaderData("event-detail");
-    return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(EventFormTemplate_default, { method: "patch", event });
+    return /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(EventFormTemplate_default, { method: "patch", event });
   }
   var EditEventScript_default = withAuthenticationRequired(EditEventScript, {
-    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Loading_default, {})
+    onRedirecting: () => /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(Loading_default, {})
   });
 
   // static/react/scripts/ErrorScript.tsx
-  var import_jsx_runtime16 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime18 = __toESM(require_jsx_runtime());
   function ErrorScript() {
     const error = useRouteError();
     let title = "An error occurred!";
@@ -31662,49 +31784,49 @@
       title = "Not found!";
       message = "Could not find resource or page.";
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime16.jsxs)(import_jsx_runtime16.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(MainNavigation_default, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime16.jsx)("h1", { children: title }),
-      /* @__PURE__ */ (0, import_jsx_runtime16.jsx)("p", { children: message })
+    return /* @__PURE__ */ (0, import_jsx_runtime18.jsxs)(import_jsx_runtime18.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(MainNavigation_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("h1", { children: title }),
+      /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("p", { children: message })
     ] });
   }
   var ErrorScript_default = ErrorScript;
 
   // static/react/scripts/Auth0Logout.tsx
-  var import_jsx_runtime17 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime19 = __toESM(require_jsx_runtime());
   var LogoutButton = () => {
     const { logout } = useAuth0();
-    return /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("button", { onClick: () => logout({ logoutParams: { returnTo: "http://localhost:8888/shop" } }), children: "Log Out" });
+    return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("button", { onClick: () => logout({ logoutParams: { returnTo: "http://localhost:8888/shop" } }), children: "Log Out" });
   };
   var Auth0Logout_default = LogoutButton;
 
   // static/react/scripts/ProductsLayout.tsx
-  var import_jsx_runtime18 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
   var ProductsLayout = (props) => {
     const {} = props;
-    return /* @__PURE__ */ (0, import_jsx_runtime18.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(MainNavigation_default, {}) }),
-      /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(Outlet, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("div", { className: "row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(MainNavigation_default, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(Outlet, {}) })
     ] });
   };
   var ProductsLayout_default = ProductsLayout;
 
   // static/react/scripts/ProductsScript.tsx
-  var import_jsx_runtime19 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime21 = __toESM(require_jsx_runtime());
   var ProductsScript = (props) => {
     const events = useLoaderData();
     const { addItem } = useCart();
-    return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(import_jsx_runtime19.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "col-sm-12", children: events.map((evt) => /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "d-md-flex flex-md-wrap gap-3 mb-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("img", { src: evt.imageUrl, className: "img-fluid" }),
-      /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "flex flex-column", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("h1", { children: evt.name }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("p", { children: evt.description }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("p", { children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(import_jsx_runtime21.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "col-sm-12", children: events.map((evt) => /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "d-md-flex flex-md-wrap gap-3 mb-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("img", { src: evt.imageUrl, className: "img-fluid" }),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { className: "flex flex-column", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("h1", { children: evt.name }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("p", { children: evt.description }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("p", { children: [
           "R",
           evt.price
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Link, { to: `/shop/products/${evt.id}`, children: "Details" }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Link, { to: `/products/${evt.id}`, children: "Details" }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(
           "button",
           {
             onClick: () => addItem(evt),
@@ -31732,10 +31854,10 @@
   }
 
   // static/react/scripts/ProductDetailScript.tsx
-  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime22 = __toESM(require_jsx_runtime());
   function ProductDetailScript() {
     const event = useRouteLoaderData("product-detail");
-    return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(EventItemTemplate_default, { event }) }) }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "row", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "col-sm-12", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(EventItemTemplate_default, { event }) }) }) });
   }
   var ProductDetailScript_default = ProductDetailScript;
   async function loader4({ request, params }) {
@@ -31754,39 +31876,39 @@
   }
 
   // static/react/scripts/Auth0LoginProducts.tsx
-  var import_jsx_runtime21 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime23 = __toESM(require_jsx_runtime());
   var LoginButtonProducts = () => {
     const { loginWithRedirect } = useAuth0();
-    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("button", { onClick: () => loginWithRedirect(), children: "Log In" });
+    return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("button", { onClick: () => loginWithRedirect(), children: "Log In" });
   };
   var Auth0LoginProducts_default = LoginButtonProducts;
 
   // static/react/scripts/ShopPage.tsx
-  var import_jsx_runtime22 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime24 = __toESM(require_jsx_runtime());
   var ShopPage = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsxs)("div", { className: "row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(Link, { to: "/shop/products", children: "Products" }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("img", { src: "/images/gallery-img-09.jpg", className: "img-fluid" }) })
+    return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_runtime24.jsxs)("div", { className: "row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(Link, { to: "/products", children: "Products" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "col-sm-6", children: /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("img", { src: "/images/gallery-img-09.jpg", className: "img-fluid" }) })
     ] }) });
   };
   var ShopPage_default = ShopPage;
 
   // static/react/App.tsx
-  var import_jsx_runtime23 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime25 = __toESM(require_jsx_runtime());
   var routeradmin = createBrowserRouter([
     {
       path: "/shop",
-      element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(RootLayout_default, {}),
-      errorElement: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ErrorScript_default, {}),
+      element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(RootLayout_default, {}),
+      errorElement: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ErrorScript_default, {}),
       children: [
-        { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(HomeScript_default, {}) },
-        { path: "login-admin", element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Auth0Login_default, {}) },
-        { path: "logout-admin", element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Auth0Logout_default, {}) },
+        { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(HomeScript_default, {}) },
+        { path: "login-admin", element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(Auth0Login_default, {}) },
+        { path: "logout-admin", element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(Auth0Logout_default, {}) },
         {
           path: "events",
-          element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(EventsLayout_default, {}),
+          element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(EventsLayout_default, {}),
           children: [
-            { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(EventsScript_default, {}), loader },
+            { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(EventsScript_default, {}), loader },
             {
               path: ":id",
               id: "event-detail",
@@ -31794,19 +31916,19 @@
               children: [
                 {
                   index: true,
-                  element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(EventDetailScript_default, {}),
+                  element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(EventDetailScript_default, {}),
                   action
                 },
                 {
                   path: "edit",
-                  element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(EditEventScript_default, {}),
+                  element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(EditEventScript_default, {}),
                   action: action2
                 }
               ]
             },
             {
               path: "new",
-              element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(NewEventScript_default, {}),
+              element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(NewEventScript_default, {}),
               action: action2
             }
           ]
@@ -31816,18 +31938,18 @@
   ]);
   var routerproducts = createBrowserRouter([
     {
-      path: "/shop",
-      element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(RootLayout_default, {}),
-      errorElement: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ErrorScript_default, {}),
+      path: "/",
+      element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(RootLayout_default, {}),
+      errorElement: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ErrorScript_default, {}),
       children: [
-        { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ShopPage_default, {}) },
-        { path: "login-products", element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Auth0LoginProducts_default, {}) },
-        { path: "logout-products", element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Auth0LoginProducts_default, {}) },
+        { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ShopPage_default, {}) },
+        { path: "login-products", element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(Auth0LoginProducts_default, {}) },
+        { path: "logout-products", element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(Auth0LoginProducts_default, {}) },
         {
           path: "products",
-          element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ProductsLayout_default, {}),
+          element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ProductsLayout_default, {}),
           children: [
-            { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ProductsScript_default, {}), loader: loader3 },
+            { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ProductsScript_default, {}), loader: loader3 },
             {
               path: ":id",
               id: "product-detail",
@@ -31835,7 +31957,7 @@
               children: [
                 {
                   index: true,
-                  element: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ProductDetailScript_default, {})
+                  element: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(ProductDetailScript_default, {})
                 }
               ]
             }
@@ -31845,7 +31967,7 @@
     }
   ]);
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(import_jsx_runtime23.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(import_jsx_runtime25.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
       Auth0Provider,
       {
         domain: "dev-krerwol814g1npbe.us.auth0.com",
@@ -31853,17 +31975,17 @@
         authorizationParams: {
           redirect_uri: "http://localhost:8888/shop"
         },
-        children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(RouterProvider, { router: routerproducts })
+        children: /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(RouterProvider, { router: routerproducts })
       }
     ) });
   }
   var App_default = App;
 
   // static/react/main.tsx
-  var import_jsx_runtime24 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime26 = __toESM(require_jsx_runtime());
   var root = import_client.default.createRoot(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(CartProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(App_default, {}) })
+    /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(CartProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(App_default, {}) })
   );
 })();
 /*! Bundled license information:

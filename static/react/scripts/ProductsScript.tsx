@@ -27,7 +27,7 @@ const ProductsScript: FC<ProductsScriptProps> = (props: ProductsScriptProps) => 
                   <h1>{evt.name}</h1>
                   <p>{evt.description}</p>
                   <p>R{evt.price}</p>
-                  <Link to={`/shop/products/${evt.id}`}>Details</Link>
+                  <Link to={`/products/${evt.id}`}>Details</Link>
                   <button
                     onClick={() => addItem(evt as any)}
                     className="btn btn-success"

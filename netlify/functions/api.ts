@@ -1,9 +1,9 @@
-import express, { Router } from "express";
-import bodyParser from "body-parser";
-import cookieParser from "cookie-parser";
+import express, { Application } from 'express';
 import serverless from "serverless-http";
+import { router as productRouter } from './routes/products';
+import { router as userRouter } from './routes/users';
+import { authenticate } from './utils/auth';
 import cors, { CorsOptions } from "cors";
-import { prisma } from "./db/prisma";
 
 const whitelist = [
   "https://tourofheros.netlify.app",
@@ -19,25 +19,31 @@ const corsOptions: CorsOptions = {
     }
   },
 };
-const app = express();
+
+const app: Application = express();
+
 app.use(cors(corsOptions));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(cookieParser());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-const router = Router();
+app.use("/api/products", authenticate, productRouter);
+app.use("/api/users", userRouter);
 
-router.get("/heroes", async (req: any, res: any) => {
-  const products = await prisma.product.findMany();
-  return res.json(products);
+app.get('/healthcheck', (req, res) => {
+  res.status(200).json({ message: 'Server is up and running' });
 });
 
-router.get("/heroes/:id", async (req: any, res: any) => {
-  const id = req.params.id;
-  const product = await prisma.product.findUnique({ where: { id } });
-  return res.json(product);
+app.use((req, res, next) => {
+  res.status(404).json({ message: 'Route not found' });
 });
 
-app.use("/api/", router);
+app.use((error, req, res, next) => {
+  console.error(error);
+  res.status(500).json({ message: 'Internal server error' });
+});
+
+//app.use("/api/", productRouter, userRouter)
+
+
 
 export const handler = serverless(app);
