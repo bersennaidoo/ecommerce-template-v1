@@ -6,6 +6,7 @@ import { authenticate } from './utils/auth';
 import cors, { CorsOptions } from "cors";
 
 const whitelist = [
+  "https://ecommerce-template-v1.netlify.app/",
   "https://tourofheros.netlify.app",
   "http://localhost:5173",
   "http://localhost:8888",
