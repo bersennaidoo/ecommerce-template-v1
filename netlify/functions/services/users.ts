@@ -1,15 +1,11 @@
 import { prisma } from '../db/prisma';
 import { User } from '../models/User';
-//import bcrypt from "bcrypt";
 import crypto, { createHash } from "crypto";
 import { sign } from 'jsonwebtoken';
 import  env  from '../config/env';
 
 const createUser = async (user: any) => {
   try {
-    /*const saltRounds = 10;
-    const salt = bcrypt.genSaltSync(saltRounds);
-    const hashedPassword = bcrypt.hashSync(user.password, salt);*/
     const hashedPassword = crypto.createHash("sha256", user.password).digest("hex");
     const createdUser: any = await prisma.user.create({ data: { ...user, password: hashedPassword } });
     return createdUser;
@@ -62,7 +58,6 @@ const login = async (user: any) => {
     if (!foundUser) {
       throw new Error(`User not found`);
     }
-    //const result = bcrypt.compareSync(user.password, foundUser.password);
     const hashedPassword = createHash("sha256", user.password).digest("hex")
     if (foundUser.password !== hashedPassword) {
       throw new Error(`Invalid password`);
