@@ -14,7 +14,7 @@
       "strict": true,
       "forceConsistentCasingInFileNames": true,
       "noFallthroughCasesInSwitch": true,
-      "types": ["node", "node/crypto", "jest", "cypress", "@testing-library/cypress"],
+      "types": ["node", "node/crypto", "@types/bcrypt", "jest", "cypress", "@testing-library/cypress"],
       "module": "node16",
       "moduleResolution": "node16",
       "resolveJsonModule": true,
@@ -22,7 +22,7 @@
       "noEmit": true,
       "jsx": "react-jsx",
     },
-    "include": ["./cypress/**/*.spec.cy.ts", "./cypress/**/*.spec.cy.tsx", "./static/react/**/*.test.ts", "./static/react/**/*.test.tsx", "./static/react/data/interfaces.d.ts", "./node_modules/@testing-library/cypress/types/*.d.ts", "cypress", "cypress.config.ts", "static/react"],
+    "include": ["./cypress/**/*.spec.cy.ts", "./cypress/**/*.spec.cy.tsx", "./static/react/**/*.test.ts", "./static/react/**/*.test.tsx", "./static/react/data/interfaces.d.ts", "./node_modules/@testing-library/cypress/types/*.d.ts", "./node_modules/@types/bcrypt/index.d.ts","cypress", "cypress.config.ts", "static/react"],
     "exclude": ["node_modules/**/*.ts", "./public/js/**/*.ts"]
 
   }
