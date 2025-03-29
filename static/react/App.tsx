@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CartProvider } from "react-use-cart";
+/*import { CartProvider } from "react-use-cart";
 import { Auth0Provider } from "@auth0/auth0-react";
 import {
   createBrowserRouter,
@@ -77,9 +77,9 @@ const routeradmin = createBrowserRouter([
       },
     ],
   },
-]);
+]);*/
 
-const routerproducts = createBrowserRouter([
+/*const routerproducts = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
@@ -108,23 +108,13 @@ const routerproducts = createBrowserRouter([
       },
     ],
   },
-]);
+]);*/
 
 // const router = createBrowserRouter(routeDefinitions);
 
 function App() {
   return (
-    <>
-      <Auth0Provider
-        domain="dev-krerwol814g1npbe.us.auth0.com"
-        clientId="HFiq3vcJMfwyKtbBpwhlGdMyG2zr8WlZ"
-        authorizationParams={{
-          redirect_uri: "http://localhost:8888/shop",
-        }}
-      >
-        <RouterProvider router={routerproducts} />
-      </Auth0Provider>
-    </>
+    <div>Hello world</div>
   );
 }
 
