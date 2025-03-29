@@ -26,7 +26,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/products", authenticate, productRouter);
+//app.use("/api/products", authenticate, productRouter);
 app.use("/api/users", userRouter);
 
 app.get('/healthcheck', (req, res) => {
