@@ -1,13 +1,18 @@
 import { prisma } from '../db/prisma';
 import { User } from '../models/User';
 //import crypto from 'node:crypto';
+import bcrypt from "bcrypt";
 import { sign } from 'jsonwebtoken';
 import  env  from '../config/env';
 
 const createUser = async (user: any) => {
   try {
     //const hashedPassword = crypto.createHash('sha256', user.password).digest('hex');
-    const createdUser: any = await prisma.user.create({ data: { ...user } });
+    const saltRounds = 10;
+    const salt = bcrypt.genSaltSync(saltRounds);
+    const hashedPassword = bcrypt.hashSync(user.password, salt);
+    console.log(hashedPassword)
+    const createdUser: any = await prisma.user.create({ data: { ...user, password: hashedPassword } });
     return createdUser;
   } catch (error) {
     throw new Error(`Failed to create user: ${error.message}`);
@@ -54,15 +59,19 @@ const deleteUser = async (id: string) => {
 
 const login = async (user: any) => {
   try {
-    const foundUser: any = await prisma.user.findUnique({ where: { id: user.id } });
+    const foundUser: any = await prisma.user.findFirst({ where: { email: user.email } });
     console.log(foundUser)
     if (!foundUser) {
       throw new Error(`User not found`);
     }
    // const hashedPassword = hash(user.password, 'sha256').digest('hex');
-    if (foundUser.password !== user.password) {
+    const result = bcrypt.compareSync(user.password, foundUser.password);
+    if (!result) {
       throw new Error(`Invalid password`);
     }
+    /*if (foundUser.password !== user.password) {
+      throw new Error(`Invalid password`);
+    }*/
     const token = sign({ userId: foundUser.id }, env.JWT_SECRET, { expiresIn: '1h' });
     console.log(token)
     return token;
