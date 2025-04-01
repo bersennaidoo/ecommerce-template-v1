@@ -12,7 +12,7 @@ const createProduct = async (product: any) => {
 
 const getProducts = async () => {
   try {
-    const products: any = await prisma.product.findMany();
+    const products = await prisma.product.findMany();
     return products;
   } catch (error) {
     throw new Error(`Failed to retrieve products: ${error.message}`);
