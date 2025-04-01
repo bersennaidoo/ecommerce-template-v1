@@ -12,7 +12,7 @@ const createProduct = async (product: any) => {
 
 const getProducts = async () => {
   try {
-    const products = await prisma.product.findMany();
+    const products: any = await prisma.product.findMany();
     return products;
   } catch (error) {
     throw new Error(`Failed to retrieve products: ${error.message}`);
@@ -21,7 +21,7 @@ const getProducts = async () => {
 
 const getProduct = async (id: string) => {
   try {
-    const product = await prisma.product.findUnique({ where: { id } });
+    const product: any = await prisma.product.findUnique({ where: { id } });
     if (!product) {
       throw new Error(`Product not found`);
     }
@@ -33,7 +33,7 @@ const getProduct = async (id: string) => {
 
 const updateProduct = async (id: string, product: any) => {
   try {
-    const updatedProduct = await prisma.product.update({ where: { id }, data: product });
+    const updatedProduct: any = await prisma.product.update({ where: { id }, data: product });
     return updatedProduct;
   } catch (error) {
     throw new Error(`Failed to update product: ${error.message}`);
