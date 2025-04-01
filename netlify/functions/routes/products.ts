@@ -16,7 +16,7 @@ router.post('/', async (req: Request, res: Response) => {
 
 router.get('/', async (req: Request, res: Response) => {
   try {
-    const products: any = await getProducts();
+    const products = await getProducts();
     res.status(200).json(products);
   } catch (error) {
     res.status(500).json({ message: 'Failed to retrieve products' });
