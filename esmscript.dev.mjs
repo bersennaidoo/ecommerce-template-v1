@@ -4,7 +4,7 @@ let ctx = await esbuild.context({
   entryPoints: ['static/react/main.tsx'],
   bundle: true,
   sourcemap: true,
-  loader: { '.png': 'file', '.jpg': 'file' },
+  loader: { '.png': 'file', '.jpg': 'file', '.svg': 'dataurl', '.woff': 'file', '.woff2': 'file' },
   publicPath: 'http://localhost:1313/react',
   outdir: 'static/react',
   define: {

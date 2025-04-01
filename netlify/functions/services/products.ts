@@ -1,9 +1,9 @@
 import { prisma } from '../db/prisma';
 import { Product } from '../models/Product';
 
-const createProduct = async (product: Product) => {
+const createProduct = async (product: any) => {
   try {
-    const createdProduct = await prisma.product.create({ data: product });
+    const createdProduct: any = await prisma.product.create({ data: product });
     return createdProduct;
   } catch (error) {
     throw new Error(`Failed to create product: ${error.message}`);
@@ -31,7 +31,7 @@ const getProduct = async (id: string) => {
   }
 };
 
-const updateProduct = async (id: string, product: Product) => {
+const updateProduct = async (id: string, product: any) => {
   try {
     const updatedProduct = await prisma.product.update({ where: { id }, data: product });
     return updatedProduct;

@@ -24490,6 +24490,19 @@
   // static/react/main.tsx
   var import_client = __toESM(require_client());
 
+  // static/react/localStorage.ts
+  var loadState = () => {
+    try {
+      const serializedState = localStorage.getItem("cfstate");
+      if (serializedState === null) {
+        return void 0;
+      }
+      return JSON.parse(serializedState);
+    } catch (err) {
+      return void 0;
+    }
+  };
+
   // static/react/App.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   function App() {
@@ -24499,8 +24512,11 @@
 
   // static/react/main.tsx
   var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+  var persistedState = loadState();
   var root = import_client.default.createRoot(document.getElementById("root"));
-  root.render(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(App_default, {}));
+  root.render(
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(App_default, {})
+  );
 })();
 /*! Bundled license information:
 

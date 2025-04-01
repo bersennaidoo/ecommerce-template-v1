@@ -30,6 +30,8 @@ module:
       target: "assets/css"
     - source: "node_modules/@fortawesome/fontawesome-free/scss"
       target: "assets/css"
+    - source: "node_modules/bootstrap-icons"
+      target: "static/b-icons"
 
 menus:
   main:
