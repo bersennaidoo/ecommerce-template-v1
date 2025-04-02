@@ -10,6 +10,7 @@ const whitelist = [
   "https://tourofheros.netlify.app",
   "http://localhost:5173",
   "http://localhost:8888",
+  "moz-extension://72459b7e-9eeb-463f-a098-ef302ff0e4c7",
 ];
 const corsOptions: CorsOptions = {
   origin: (orig, cb) => {
